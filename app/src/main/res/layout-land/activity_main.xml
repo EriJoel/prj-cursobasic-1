@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:weightSum="3"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" android:orientation="vertical">
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView android:id="@+id/tv_last"
+                android:text="Click here to see history" android:background="#a4ccb7"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <TextView android:layout_weight="1"
+                android:id="@+id/tv_calc"
+                android:textColor="#000c4b"
+                android:padding="5dp" android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+
+
+        <GridLayout android:columnCount="6" android:layout_weight="2"
+            android:rowCount="3" android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_gravity="fill">
+
+            <Button android:id="@+id/btn_equal" android:layout_rowWeight="1"
+                android:layout_columnSpan="2" android:background="@drawable/grid_border"
+                android:layout_height="15dp"
+                android:text="=" android:layout_gravity="fill"
+                style="@style/CalculatorText"/>
+            <Button android:id="@+id/btn_back" android:layout_rowWeight="1"
+                android:layout_height="15dp"
+                android:layout_columnSpan="1" android:background="@drawable/grid_border"
+                android:text="C" android:layout_gravity="right"
+                style="@style/CalculatorText"/>
+            <Button android:id="@+id/btn_1" android:layout_rowWeight="1"
+                android:layout_height="15dp"
+                android:text="1" android:layout_gravity="fill"
+                style="@style/CalculatorText" android:background="@drawable/grid_border"/>
+            <Button android:id="@+id/btn_2" android:background="@drawable/grid_border"
+                android:layout_height="15dp"
+                android:text="2" android:layout_gravity="fill"
+                style="@style/CalculatorText"/>
+            <Button android:id="@+id/btn_3" android:background="@drawable/grid_border"
+                android:layout_height="15dp"
+                android:text="3" android:layout_gravity="fill"
+                style="@style/CalculatorText"/>
+            <Button android:id="@+id/btn_divide" android:background="@drawable/grid_border"
+                android:layout_height="15dp"
+                android:text="/" android:layout_gravity="fill"
+                style="@style/CalculatorText"/>
+            <Button android:id="@+id/btn_multiply" android:background="@drawable/grid_border"
+                android:layout_height="15dp"
+                android:text="*" android:layout_gravity="fill"
+                style="@style/CalculatorText"/>
+            <Button android:id="@+id/btn_rest" android:background="@drawable/grid_border"
+                android:layout_height="15dp"
+                android:text="-" android:layout_gravity="fill"
+                style="@style/CalculatorText"/>
+            <Button android:id="@+id/btn_4" android:layout_rowWeight="1"
+                android:layout_height="15dp"
+                android:text="4" android:layout_gravity="fill"
+                style="@style/CalculatorText" android:background="@drawable/grid_border"/>
+            <Button android:id="@+id/btn_5" android:background="@drawable/grid_border"
+                android:layout_height="15dp"
+                android:text="5" android:layout_gravity="fill"
+                style="@style/CalculatorText"/>
+            <Button android:id="@+id/btn_6" android:background="@drawable/grid_border"
+                android:layout_height="15dp"
+                android:text="6" android:layout_gravity="fill"
+                style="@style/CalculatorText"/>
+            <Button android:id="@+id/btn_plus" android:background="@drawable/grid_border"
+                android:layout_height="15dp"
+                android:text="+" android:layout_gravity="fill"
+                style="@style/CalculatorText"/>
+            <Button android:id="@+id/btn_dot" android:background="@drawable/grid_border"
+                android:layout_height="15dp"
+                android:text="." android:layout_gravity="fill"
+                style="@style/CalculatorText"/>
+            <Button android:id="@+id/btn_7" android:layout_rowWeight="1"
+                android:layout_height="15dp"
+                android:text="7" android:layout_gravity="fill"
+                style="@style/CalculatorText" android:background="@drawable/grid_border"/>
+            <Button android:id="@+id/btn_8" android:background="@drawable/grid_border"
+                android:layout_height="15dp"
+                android:text="8" android:layout_gravity="fill"
+                style="@style/CalculatorText"/>
+            <Button android:id="@+id/btn_9" android:background="@drawable/grid_border"
+                android:layout_height="15dp"
+                android:text="9" android:layout_gravity="fill"
+                style="@style/CalculatorText"/>
+            <Button android:id="@+id/btn_0"  android:layout_rowWeight="1"
+                android:layout_height="15dp"
+                android:layout_columnSpan="1" android:background="@drawable/grid_border"
+                android:text="0" android:layout_gravity="fill"
+                style="@style/CalculatorText"/>
+
+        </GridLayout>
+</LinearLayout>
